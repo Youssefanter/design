@@ -10,8 +10,7 @@ export default class Display extends React.Component {
     const url = "http://127.0.0.1:8000/api/model";
     const response = await fetch(url);
     const data = await response.json();
-    console.log(response)
-    // this.setState({ person: data.Body[0], loading: false });
+    this.setState({ person: data[3], loading: false });
   }
   render() {
     return (
@@ -21,9 +20,9 @@ export default class Display extends React.Component {
         ) : (
           <div>
             <ListGroup>
-              <ListGroup.Item>{this.state.person.name.title}</ListGroup.Item>
-              <ListGroup.Item>{this.state.person.name.first}</ListGroup.Item>
-              <ListGroup.Item>{this.state.person.name.last}</ListGroup.Item>
+              <ListGroup.Item>{this.state.person.name}</ListGroup.Item>
+              <ListGroup.Item>{this.state.person.color}</ListGroup.Item>
+              <ListGroup.Item>{this.state.person.brand}</ListGroup.Item>
             </ListGroup>
           </div>
         )}
