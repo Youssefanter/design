@@ -6,8 +6,8 @@ export default class Display extends React.Component {
     loading: true,
     person: null,
   };
-  async componenDidMount() {
-    const url = "https://api.randomuser.me/";
+  async componentDidMount() {
+    const url = "127.0.0.1:8000/api/model";
     const response = await fetch(url);
     const data = await response.json();
     this.setState({ person: data.results[0], loading: false });
