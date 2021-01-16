@@ -9,17 +9,17 @@ export default function Add() {
         <Card.Body>
           <Form>
             <Form.Group controlId="formBasicEmail">
-              <Form.Label>Email address</Form.Label>
-              <Form.Control type="email" placeholder="Enter email" />
+              <Form.Label>Brand</Form.Label>
+              <Form.Control type="text" placeholder="Enter Brand" />
             </Form.Group>
             <Form.Group>
               <Form.Label>Name</Form.Label>
-              <Form.Control type="name" placeholder="Enter Name" />
+              <Form.Control type="text" placeholder="Enter Name" />
             </Form.Group>
 
             <Form.Group controlId="formBasicPassword">
-              <Form.Label>Password</Form.Label>
-              <Form.Control type="password" placeholder="Password" />
+              <Form.Label>Color</Form.Label>
+              <Form.Control type="text" placeholder="Enter Color" />
             </Form.Group>
           </Form>
           <Button variant="primary">Add</Button>
