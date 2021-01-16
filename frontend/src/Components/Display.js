@@ -7,16 +7,17 @@ export default class Display extends React.Component {
     person: null,
   };
   async componentDidMount() {
-    const url = "127.0.0.1:8000/api/model";
+    const url = "http://127.0.0.1:8000/api/model";
     const response = await fetch(url);
     const data = await response.json();
-    this.setState({ person: data.results[0], loading: false });
+    console.log(response)
+    // this.setState({ person: data.Body[0], loading: false });
   }
   render() {
     return (
       <div>
         {this.state.loading || !this.state.person ? (
-          <div>loading...</div>
+          <div>loading...test</div>
         ) : (
           <div>
             <ListGroup>
