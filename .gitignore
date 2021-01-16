@@ -1,1 +1,14 @@
 node_modules
+backend/home/migrations/__pycache__/0001_initial.cpython-39.pyc
+backend/home/migrations/__pycache__/__init__.cpython-39.pyc
+backend/home/__pycache__/urls.cpython-39.pyc
+backend/home/__pycache__/serializers.cpython-39.pyc
+backend/home/__pycache__/models.cpython-39.pyc
+backend/home/__pycache__/apps.cpython-39.pyc
+backend/home/__pycache__/api.cpython-39.pyc
+backend/home/__pycache__/admin.cpython-39.pyc
+backend/home/__pycache__/__init__.cpython-39.pyc
+backend/cards/__pycache__/wsgi.cpython-39.pyc
+backend/cards/__pycache__/urls.cpython-39.pyc
+backend/cards/__pycache__/settings.cpython-39.pyc
+backend/cards/__pycache__/__init__.cpython-39.pyc
